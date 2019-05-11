@@ -84,3 +84,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+.v-footer
+  padding 0 4px
+</style>
