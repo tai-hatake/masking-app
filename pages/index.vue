@@ -1,83 +1,51 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-xs-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >documentation</a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >discord</a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >issue board</a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+  <v-jumbotron>
+    <v-container fill-height>
+      <v-layout align-center>
+        <v-flex>
+          <h3 class="display-3">
+            ドキュメントの個人識別情報をマスキング
+          </h3>
+
+          <div class="subheading">
+            組織が扱う大量のドキュメントやデータには個人を特定できる情報が含まれます。
           </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >Nuxt Documentation</a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >Nuxt GitHub</a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
+          <div class="subheading">
+            そのため、目視で個人情報の漏洩可能性のあるデータのチェック、特定、対処は時間とコスト大幅にかかります。
+          </div>
+          <div class="subheading">
+            組織に損害を与えるような情報漏えいを防ぐために、個人を特定できる情報を伏せ字にし、この情報を安全に保管・共有できるようにします。
+          </div>
+
+          <v-divider class="my-3" />
+          <!-- <div>
+            <v-icon large color="blue darken-2">chat</v-icon>
+            <div class="title mb-3">
+              形態素解析はAI(人工知能)の自然言語処理の過程でも使用されています。
+              コンピューターであるAIに、あいまいな表現などが多い自然言語を、プログラムを組んで処理してもらう場合、「自然言語処理」という特別な処理が必要になります。
+              日本語での自然言語処理を行う場合、処理してほしい文章を「形態素解析」「構文解析」「意味解析」「文脈解析」というようにさまざまな解析を行い、やっとコンピューターが自然言語の意味を処理できるようになるのです。
+              日本語での自然言語処理をする時、単語を最小単位にまで分割できる形態素解析の機能はとても重要です。
+            </div>
+          </div> -->
+
+          <div class="title mb-3">
+            Check out our newest features!
+          </div>
+
           <v-btn
+            class="mx-0"
             color="primary"
-            flat
-            nuxt
-            to="/inspire"
+            large
+            to="/masking"
           >
-            Continue
+            デモページ
           </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-jumbotron>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-}
+export default {}
 </script>

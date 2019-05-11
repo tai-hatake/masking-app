@@ -63,19 +63,23 @@ export default {
       items: [
         {
           icon: 'apps',
-          title: 'Welcome',
+          title: 'ホーム',
           to: '/'
         },
         {
           icon: 'bubble_chart',
-          title: 'Masking',
+          title: 'デモ',
           to: '/masking'
+        },
+        {
+          icon: 'contact_support',
+          title: '問い合わせ',
+          to: '/contact'
         }
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'masking'
+      title: 'Conceal（コンシール）'
     }
   }
 }
