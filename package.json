@@ -1,7 +1,7 @@
 {
   "name": "masking-app",
   "version": "1.0.0",
-  "description": "My peachy Nuxt.js project",
+  "description": "データ、ドキュメントの個人情報マスキングサービス",
   "author": "tai-hatake",
   "private": true,
   "scripts": {
